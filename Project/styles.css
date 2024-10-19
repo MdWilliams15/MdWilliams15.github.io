@@ -1,0 +1,61 @@
+body {
+    background-color: #ADD8E6; /* Light Blue */
+    font-family: Arial, sans-serif; 
+    line-height: 1.6; 
+    margin: 0; 
+    padding: 20px; /* Add padding for better spacing */
+}
+
+header, nav, main, footer {
+    background-color: white; /* White background for content areas */
+    padding: 20px; 
+    border-radius: 8px; /* Rounded corners for a softer look */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+    margin-bottom: 20px; 
+
+nav {
+    display: flex; /* Use Flexbox for layout */
+    justify-content: center; /* Center the navigation items */
+}
+
+nav ul {
+    display: flex; /* Use Flexbox for the list */
+    list-style-type: none; /* Remove bullet points */
+    padding: 0; /* Remove padding */
+}
+
+nav li {
+    margin: 10px; /* Space between the bubbles */
+}
+
+nav a {
+    display: inline-block; /* Make the link an inline block */
+    width: 120px; /* Increased width for larger bubbles */
+    height: 120px; /* Increased height for larger bubbles */
+    line-height: 120px; /* Center text vertically */
+    text-align: center; /* Center text horizontally */
+    border-radius: 60px; /* Make the link circular */
+    background-color: #007BFF; /* Blue background color */
+    color: white; /* Text color */
+    text-decoration: none; /* Remove underline from links */
+    font-size: 16px; /* Font size for readability */
+    transition: background-color 0.3s; /* Smooth transition on hover */
+}
+
+nav a:hover {
+    background-color: #0056b3; /* Darker shade of blue on hover */
+}
+
+footer {
+    text-align: center; /* Center footer text */
+    font-size: 0.9em; /* Smaller font for footer */
+}
+
+@media (max-width: 768px) {
+    nav a {
+        width: 80px; /* Adjust width for smaller screens */
+        height: 80px; /* Adjust height for smaller screens */
+        line-height: 80px; /* Center text vertically */
+        font-size: 14px; /* Smaller font size */
+    }
+}
