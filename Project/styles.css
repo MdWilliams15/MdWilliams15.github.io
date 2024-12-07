@@ -12,6 +12,7 @@ header, nav, main, footer {
     border-radius: 8px; /* Rounded corners for a softer look */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
     margin-bottom: 20px; 
+}
 
 nav {
     display: flex; 
@@ -49,6 +50,11 @@ nav a:hover {
 footer {
     text-align: center; /* Center footer text */
     font-size: 0.9em; /* Smaller font for footer */
+}
+
+/* Overriding joke text color to black */
+#greeting {
+    color: black !important; /* Force color to black using !important */
 }
 
 @media (max-width: 768px) {

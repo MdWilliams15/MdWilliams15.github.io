@@ -2,14 +2,14 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My College Life - Home</title>
     <link rel="stylesheet" href="styles.css">
-    <style>
-    
-        main h2 {
-            text-align: center;
-        }
-    </style>
+    <!-- Include jQuery and jQuery UI for the datepicker -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
     <header>
@@ -34,6 +34,19 @@
         <img src="Images/Feb1.jpg" alt="Me in front of the Greensboro 4 statue" width="400" height="450"> 
         <img src="Images/Skylook.jpg" alt="Me looking at the sky" width="800" height="450"> 
         <img src="Images/superman.jpg" alt="Me with my A&T shirt" width="550" height="450"> 
+
+        <!-- Button to change background color -->
+        <button id="changeColorBtn">Change Background Color</button>
+
+        <!-- Section for Datepicker -->
+        <label for="date">Pick a Date:</label>
+        <input type="text" id="date">
+        
+        <!-- Button to display a random joke -->
+        <button id="jokeBtn">Show Random Joke</button>
+
+        <!-- Section to display the joke -->
+        <div id="greeting" style="margin-top: 20px; font-size: 1.2em; font-weight: bold; color: black;"></div>
     </main>
 
     <footer>
@@ -43,4 +56,3 @@
     </footer>
 </body>
 </html>
-
